@@ -1,0 +1,27 @@
+﻿  Gopher.cpp
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(151): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(153): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(155): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(157): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(159): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(161): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(163): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(165): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(167): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(169): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(171): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(173): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(175): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(177): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(179): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(272): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(273): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(296): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(296): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\comp\desktop\bot\gopher360-0.989\windows\gopher\gopher\gopher.cpp(296): warning C4244: '=': conversion from 'double' to 'DWORD', possible loss of data
+  Generating code
+  1 of 552 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Gopher.vcxproj -> C:\Users\COMP\Desktop\Bot\Gopher360-0.989\Windows\Gopher\Release\Gopher.exe
