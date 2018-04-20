@@ -77,17 +77,18 @@ void Gopher::loadConfigFile()
 	setWindowVisibility(_hidden);
 }
 
+
 //This gets current directory and then correctly formats the path
 std::string workingdir()
 {
-	char buf[256];
-	GetCurrentDirectoryA(256, buf);
+	char dir[256];
+	GetCurrentDirectoryA(256, dir);
 
 	for (int i = 0; i < 256; i++) {
-		if (buf[i] == '\\')
-			buf[i] = '/';
+		if (dir[i] == '\\')
+			dir[i] = '/';
 	}
-	return std::string(buf) + '/';
+	return std::string(dir) + '/';
 }
 
 
