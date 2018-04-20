@@ -95,6 +95,7 @@ void ConfigFile::ExtractKeys()
 		outfile << "CONFIG_DISABLE = 0x0030		# Disables the Gopher" << std::endl;
 		outfile << "CONFIG_DISABLE_VIBRATION = 0x0011 # Disables Gopher Vibrations" << std::endl;
 		outfile << "CONFIG_SPEED_CHANGE =  0x0300	# Change speed" << std::endl;
+		outfile << "CONFIG_OPEN_KEYBOARD = 0x0010	# Open System Keyboard" << std::endl;
 		outfile << "\n" << std::endl;
 		outfile << "#	KEYBOARD SHORTCUTS ON CONTROLLER BUTTONS" << std::endl;
 		outfile << "#	SET 0 FOR NO FUNCTION" << std::endl;
@@ -104,8 +105,8 @@ void ConfigFile::ExtractKeys()
 		outfile << "GAMEPAD_DPAD_DOWN = 0x28" << std::endl;
 		outfile << "GAMEPAD_DPAD_LEFT = 0x25" << std::endl;
 		outfile << "GAMEPAD_DPAD_RIGHT = 0x27" << std::endl;
-		outfile << "GAMEPAD_START = 0x5B" << std::endl;
-		outfile << "GAMEPAD_BACK = 0xA8" << std::endl;
+		outfile << "GAMEPAD_START = 0" << std::endl;
+		outfile << "GAMEPAD_BACK = 0" << std::endl;
 		outfile << "GAMEPAD_LEFT_THUMB = 0" << std::endl;
 		outfile << "GAMEPAD_RIGHT_THUMB = 0x71" << std::endl;
 		outfile << "GAMEPAD_LEFT_SHOULDER = 0xAE" << std::endl;
