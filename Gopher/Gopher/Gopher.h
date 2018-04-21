@@ -17,12 +17,18 @@ private:
 	const int DEAD_ZONE = 4000; //X and Y minimum, below this is ignored since all controllers have some stick to them
 	const int SCROLL_DEAD_ZONE = 5000; // Right thumbstick should be less sensitive.
 	const int TRIGGER_DEAD_ZONE = 0;
-	const int SCROLL_SPEED = 20; // Speed at which you scroll page.
 	const int FPS = 150;
 	const int SLEEP_AMOUNT = 1000/FPS; // number of milliseconds to sleep per iteration
 
 	XINPUT_STATE _currentState;
 
+	//Scroll Speed
+	const float SCROLL_LOW = 0.012;
+	const float SCROLL_MED = 0.052;
+	const float SCROLL_HIGH = 0.92;
+	float scroll_speed = SCROLL_MED;
+
+	//Mouse Speed
 	const float SPEED_LOW = 0.011f;
 	const float SPEED_MED = 0.023f;
 	const float SPEED_HIGH = 0.041f;
@@ -48,6 +54,7 @@ private:
 	DWORD CONFIG_DISABLE_VIBRATION = NULL;
 	DWORD CONFIG_SPEED_CHANGE = NULL;
 	DWORD CONFIG_OPEN_KEYBOARD = NULL;
+	DWORD CONFIG_SCROLL_SPEED = NULL;
 
 	//Gamepad bindings
 	DWORD GAMEPAD_DPAD_UP = NULL;
