@@ -164,18 +164,18 @@ void Gopher::loop() {
 		printf("SCROLL\n");
 
 		if (scroll_speed == SCROLL_LOW) {
-			printf("Setting scroll speed to LOW...\n");
+			printf("Setting scroll speed to MED...\n");
 			pulseVibrate(450, 30000, 30000);
 			scroll_speed = SCROLL_MED;
 		}
 		else if (scroll_speed == SCROLL_MED) {
-			printf("Setting scroll speed to MED...\n");
+			printf("Setting scroll speed to HIGH...\n");
 			pulseVibrate(450, 30000, 30000);
 			scroll_speed = SCROLL_HIGH;
 
 		}
 		else if (scroll_speed == SCROLL_HIGH) {
-			printf("Setting scroll speed to HIGH...\n");
+			printf("Setting scroll speed to LOW...\n");
 			pulseVibrate(450, 65000, 65000);
 			scroll_speed = SCROLL_LOW;
 
