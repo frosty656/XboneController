@@ -2,28 +2,32 @@
 c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.h(26): warning C4305: 'initializing': truncation from 'double' to 'const float'
 c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.h(27): warning C4305: 'initializing': truncation from 'double' to 'const float'
 c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.h(28): warning C4305: 'initializing': truncation from 'double' to 'const float'
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(210): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(212): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(214): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(216): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(218): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(220): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(222): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(224): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(226): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(228): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(230): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(232): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
 c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(234): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
 c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(236): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
 c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(238): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
-c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(240): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
-c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(242): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
-c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(244): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
-c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(246): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
-c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(248): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
-c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(250): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
-c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(252): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
-c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(254): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
-c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(256): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
-c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(258): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
-c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(260): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
-c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(262): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
-c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(355): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(356): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
-c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(379): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
-c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(379): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(379): warning C4244: '=': conversion from 'double' to 'DWORD', possible loss of data
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(331): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(332): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(355): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(355): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.cpp(355): warning C4244: '=': conversion from 'float' to 'DWORD', possible loss of data
+  main.cpp
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.h(26): warning C4305: 'initializing': truncation from 'double' to 'const float'
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.h(27): warning C4305: 'initializing': truncation from 'double' to 'const float'
+c:\users\comp\documents\github\xbonecontroller\gopher\gopher\gopher.h(28): warning C4305: 'initializing': truncation from 'double' to 'const float'
   Generating code
-  0 of 554 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+  4 of 554 functions ( 0.7%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code

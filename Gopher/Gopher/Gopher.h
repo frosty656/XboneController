@@ -23,9 +23,9 @@ private:
 	XINPUT_STATE _currentState;
 
 	//Scroll Speed
-	const float SCROLL_LOW = 0.012;
-	const float SCROLL_MED = 0.052;
-	const float SCROLL_HIGH = 0.92;
+	const float SCROLL_LOW = 0.0042;
+	const float SCROLL_MED = 0.0125;
+	const float SCROLL_HIGH = 0.9;
 	float scroll_speed = SCROLL_MED;
 
 	//Mouse Speed

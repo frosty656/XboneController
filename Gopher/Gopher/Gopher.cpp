@@ -54,7 +54,7 @@ void Gopher::loadConfigFile()
 	CONFIG_DISABLE_VIBRATION = strtol(cfg.getValueOfKey<std::string>("CONFIG_DISABLE_VIBRATION").c_str(), 0, 0);
 	CONFIG_SPEED_CHANGE = strtol(cfg.getValueOfKey<std::string>("CONFIG_SPEED_CHANGE").c_str(), 0, 0);
 	CONFIG_OPEN_KEYBOARD = strtol(cfg.getValueOfKey<std::string>("CONFIG_OPEN_KEYBOARD").c_str(), 0, 0);
-	CONFIG_SCROLL_SPEED = strtol(cfg.getValueOfKey<std::string>("	CONFIG_SCROLL_SPEED").c_str(), 0, 0);
+	CONFIG_SCROLL_SPEED = strtol(cfg.getValueOfKey<std::string>("CONFIG_SCROLL_SPEED").c_str(), 0, 0);
 
 	//Controller bindings
 	GAMEPAD_DPAD_UP = strtol(cfg.getValueOfKey<std::string>("GAMEPAD_DPAD_UP").c_str(), 0, 0);
@@ -118,29 +118,6 @@ void Gopher::loop() {
 	if (CONFIG_MOUSE_MIDDLE)
 		mapMouseClick(CONFIG_MOUSE_MIDDLE, MOUSEEVENTF_MIDDLEDOWN, MOUSEEVENTF_MIDDLEUP);
 
-	//Controls the scrolling speed
-	if (_xboxClickIsDown[CONFIG_SCROLL_SPEED]) { // THIS IS NOT TRIGGERING
-		printf("SCROLL\n");
-
-		if (scroll_speed == SCROLL_LOW) {
-			printf("Setting scroll speed to LOW...\n");
-			pulseVibrate(450, 30000, 30000);
-			scroll_speed = SCROLL_MED;
-		}
-		else if (scroll_speed == SCROLL_MED) {
-			printf("Setting scroll speed to HIGH...\n");
-			pulseVibrate(450, 30000, 30000);
-			scroll_speed = SCROLL_HIGH;
-
-		}
-		else if (scroll_speed == SCROLL_HIGH) {
-			printf("Setting scroll speed to HIGH...\n");
-			pulseVibrate(450, 65000, 65000);
-			scroll_speed = SCROLL_LOW;
-
-		}
-	}
-
 	//Hides the console
 	if (CONFIG_HIDE)
 	{
@@ -151,32 +128,6 @@ void Gopher::loop() {
 		}
 	}
 
-
-	//Controls the speed of mouse
-	if (_xboxClickIsDown[CONFIG_SCROLL_SPEED]) {
-
-		if (speed == SPEED_LOW)
-		{
-			printf("Setting speed to MEDIUM...\n");
-			speed = SPEED_MED;
-			pulseVibrate(450, 30000, 30000);
-		}
-		else if (speed == SPEED_MED)
-		{
-			printf("Setting speed to HIGH...\n");
-			speed = SPEED_HIGH;
-			pulseVibrate(450, 65000, 65000);
-		}
-		else if (speed == SPEED_HIGH)
-		{
-			printf("Setting speed to LOW...\n");
-			speed = SPEED_LOW;
-			pulseVibrate(450, 30000, 30000);
-		}
-	}
-
-
-	
 	//Open close on screen keyboard
 	setXboxClickState(CONFIG_OPEN_KEYBOARD);
 	if (_xboxClickIsDown[CONFIG_OPEN_KEYBOARD]) {
@@ -206,7 +157,32 @@ void Gopher::loop() {
 		}
 	}
 
-	//Will change between the current speed values
+	//Will change between the current scroll speed values
+	setXboxClickState(CONFIG_SCROLL_SPEED);
+	if (_xboxClickIsDown[CONFIG_SCROLL_SPEED])
+	{
+		printf("SCROLL\n");
+
+		if (scroll_speed == SCROLL_LOW) {
+			printf("Setting scroll speed to LOW...\n");
+			pulseVibrate(450, 30000, 30000);
+			scroll_speed = SCROLL_MED;
+		}
+		else if (scroll_speed == SCROLL_MED) {
+			printf("Setting scroll speed to MED...\n");
+			pulseVibrate(450, 30000, 30000);
+			scroll_speed = SCROLL_HIGH;
+
+		}
+		else if (scroll_speed == SCROLL_HIGH) {
+			printf("Setting scroll speed to HIGH...\n");
+			pulseVibrate(450, 65000, 65000);
+			scroll_speed = SCROLL_LOW;
+
+		}
+	}
+
+	//Will change between the current mouse speed values
 	setXboxClickState(CONFIG_SPEED_CHANGE);
 	if (_xboxClickIsDown[CONFIG_SPEED_CHANGE]) {
 
@@ -376,7 +352,7 @@ void Gopher::handleScrolling()
 	{
 		INPUT input;
 		input.type = INPUT_MOUSE;
-		input.mi.mouseData = getDelta(ty) * getMult(ty * ty, SCROLL_DEAD_ZONE) * 0.095;
+		input.mi.mouseData = getDelta(ty) * getMult(ty * ty, SCROLL_DEAD_ZONE) * scroll_speed;
 		input.mi.dwFlags = MOUSEEVENTF_WHEEL;
 		input.mi.time = 0;
 		SendInput(1, &input, sizeof(INPUT));
