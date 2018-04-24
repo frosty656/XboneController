@@ -75,7 +75,6 @@ void ConfigFile::ExtractKeys()
 
 	if (!file)
 	{
-		
 		printf("%s not found! Building a fresh one... ", fName.c_str());
 
 		std::ofstream outfile("config.ini");
@@ -88,14 +87,14 @@ void ConfigFile::ExtractKeys()
 		outfile << "#	AVAILABLE VALUES AT> https://msdn.microsoft.com/en-us/library/windows/desktop/microsoft.directx_sdk.reference.xinput_gamepad(v=vs.85).aspx" << std::endl;
 		outfile << "#	TIP: Sum the hex value for double button shortcuts eg. 0x0010(START) 0x0020(BACK) so 0x0030(START+BACK) will trigger the event only when both are pressed." << std::endl;
 		outfile << "\n" << std::endl;
-		outfile << "CONFIG_MOUSE_LEFT = 0x1000	# Left mouse button" << std::endl;
-		outfile << "CONFIG_MOUSE_RIGHT = 0x4000	# Right mouse button" << std::endl;
-		outfile << "CONFIG_MOUSE_MIDDLE = 0x0040	# Middle mouse button" << std::endl;
-		outfile << "CONFIG_HIDE = 0x8000		# Hides the terminal" << std::endl;
-		outfile << "CONFIG_DISABLE = 0x0030		# Disables the Gopher" << std::endl;
-		outfile << "CONFIG_DISABLE_VIBRATION = 0x0011 # Disables Gopher Vibrations" << std::endl;
-		outfile << "CONFIG_SPEED_CHANGE =  0x0300	# Change speed" << std::endl;
-		outfile << "CONFIG_OPEN_KEYBOARD = 0x0010	# Open System Keyboard" << std::endl;
+		outfile << "CONFIG_MOUSE_LEFT = "<< Left_Mouse <<" # Left mouse button" << std::endl;
+		outfile << "CONFIG_MOUSE_RIGHT = "<< Right_Mouse << " # Right mouse button" << std::endl;
+		outfile << "CONFIG_MOUSE_MIDDLE = " << Middle_Mouse << "	# Middle mouse button" << std::endl;
+		outfile << "CONFIG_HIDE = " << Hide << "		# Hides the terminal" << std::endl;
+		outfile << "CONFIG_DISABLE = " << Disable << "		# Disables the Gopher" << std::endl;
+		outfile << "CONFIG_DISABLE_VIBRATION = " << Vibration_Disable << " # Disables Gopher Vibrations" << std::endl;
+		outfile << "CONFIG_SPEED_CHANGE =  " << Speed_Change << "	# Change speed" << std::endl;
+		outfile << "CONFIG_OPEN_KEYBOARD = " << Open_Keyboard << "	# Open System Keyboard" << std::endl;
 		outfile << "\n" << std::endl;
 		outfile << "#	KEYBOARD SHORTCUTS ON CONTROLLER BUTTONS" << std::endl;
 		outfile << "#	SET 0 FOR NO FUNCTION" << std::endl;
