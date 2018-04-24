@@ -22,6 +22,7 @@ private:
 	std::string Vibration_Disable= "0x0011";
 	std::string Speed_Change = "0x0300";
 	std::string Open_Keyboard= "0x0010";
+	std::string Scroll_Change = "0x0080";
 
 	//Keybind Variables Gamepad Bindings
 	std::string Dpad_Up = "0x26";
