@@ -75,8 +75,6 @@ void ConfigFile::ExtractKeys()
 
 	if (!file)
 	{
-		printf("%s not found! Building a fresh one... ", fName.c_str());
-
 		std::ofstream outfile("config.ini");
 
 		//begin cfg dump
@@ -134,9 +132,6 @@ void ConfigFile::ExtractKeys()
 			printf("Success!\nUsing %s...\n", fName.c_str());
 		}
 	}
-
-	//exitWithError("\nSafety exit!\n");
-		
 
 	std::string line;
 	size_t lineNo = 0;
